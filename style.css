@@ -1,0 +1,87 @@
+/* Genel Stil */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #ff7f50;
+  font-size: 1.1em;
+  color: #333;
+  background: #f9f9f9;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 127, 80, 0.5);
+}
+
+.output-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffefd5;
+  border-radius: 10px;
+  border: 2px solid #ff7f50;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+#fibonacciOutput {
+  font-size: 1.5em;
+  color: #333;
+  word-wrap: break-word;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
