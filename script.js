@@ -1,6 +1,6 @@
 const fibonacciSequence = [1, 1];
 
-// Fibonacci dizisini genişletme
+// Expand Fibonacci Sequence
 const generateFibonacci = (n) => {
   while (fibonacciSequence.length < n) {
     const length = fibonacciSequence.length;
@@ -8,7 +8,7 @@ const generateFibonacci = (n) => {
   }
 };
 
-// Metni Fibonacci dizisine çevirme
+// Text to Fibonacci
 const convertToFibonacci = () => {
   const inputText = document.getElementById('inputText').value.toUpperCase();
   const fibonacciOutput = document.getElementById('fibonacciOutput');
